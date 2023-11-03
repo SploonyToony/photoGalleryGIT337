@@ -33,13 +33,15 @@
             </figure>
 
             <figure>
-                <img id="" src="Guatemala.png" alt="">
+                <img id="guatemala" src="Guatemala.png" alt="">
                 <figcaption>Guatemala, 1997</figcaption>
             </figure>
 
             <figure>
                 <img id="hawaii" src="Hawaii.png" alt="">
                 <figcaption>Hawaii, 2010</figcaption>
+            </figure>
+
             <figure>
                 <img id="iran" src="Iran.png" alt="">
                 <figcaption>Iran, 1999</figcaption>
@@ -91,17 +93,18 @@
             <p>Please fill out this form and I’ll connect with you soon.</p>
             
             Your contact information
-            <label for="Name">Name</label>
-            <input type="text" id="Name" name="Name" placeholder="Your full name">
+            <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name">
 
-            <label for="Email">Email</label>
-            <input type="text" id="Email" email="Email" placeholder="Enter your email address">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address">
 
-            <label for="Message">Message</label>
-            <input type="text" id="Message" message="Message" placeholder="What can I help you with?">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="What can I help you with?">
 
             <input type="submit" value="Submit">
-            
+        </form>
         </section>
     </main>
     <footer>Copyright 2021 TK Photography</footer>
