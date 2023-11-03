@@ -28,13 +28,13 @@
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
 
             <figure>
-            <img id="chile" src="Chile.png" alt="">
-            <figcaption>Chile, 2001</figcaption>
+                <img id="chile" src="Chile.png" alt="">
+                <figcaption>Chile, 2001</figcaption>
             </figure>
 
             <figure>
-            <img id="" src="Guatemala.png" alt="">
-            <figcaption>Guatemala, 1997</figcaption>
+                <img id="" src="Guatemala.png" alt="">
+                <figcaption>Guatemala, 1997</figcaption>
             </figure>
 
             <figure>
@@ -91,10 +91,16 @@
             <p>Please fill out this form and I’ll connect with you soon.</p>
             
             Your contact information
-            Name (Your full name)
-            Email (Enter your email address)
-            Message (What can I help you with?)
-            Submit
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="Name" placeholder="Your full name">
+
+            <label for="Email">Email</label>
+            <input type="text" id="Email" email="Email" placeholder="Enter your email address">
+
+            <label for="Message">Message</label>
+            <input type="text" id="Message" message="Message" placeholder="What can I help you with?">
+
+            <input type="submit" value="Submit">
             
         </section>
     </main>
