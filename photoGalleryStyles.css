@@ -4,6 +4,14 @@ html {
     color:white;
 }
 
+body{
+  padding: 30px;
+}
+
+section {
+ padding: 10px;
+}
+
 h1 {
     font-size: 3em;
     color:#007d7b;
@@ -13,6 +21,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
     font-size: 2em;
     text-transform: uppercase;
 }
@@ -23,6 +32,7 @@ nav li {
 nav a {
     color:white;
     font-size: 1.5em;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -40,6 +50,13 @@ p{
 
 #gallery,#about{
     background-color: white;
+    color:black;
+    display: grid;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 #chile {
@@ -79,8 +96,23 @@ p{
     grid-area:wyoming;
   }
 
-figcaption, label, input, small {
+img {
+    position:relative;
+  }
+
+figure {
+    position:relative;
+    top:10px;
+  }
+
+figcaption, label, placeholder, input, small {
     font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+::placeholder {
+  color:#007d7b;
 }
 
 @media screen and (min-width:485px){
@@ -92,13 +124,46 @@ figcaption, label, input, small {
         grid-template-columns: 1fr 1fr 1fr;
     
     }
+  #gallery {
+    grid-template-areas:
+      "chile"
+      "guatemala"
+      "hawaii"
+      "iran"
+      "ireland"
+      "italy"
+      "moabDesert"
+      "rockyMountains"
+      "switzerland"
+      "uk"
+      "us"
+      "wyoming"
+  }
 
 }
 
 @media screen and (min-width:880px){
-    
+  h1 {
+    text-align: left;
+    padding-left: 10px;
+  }
+  #gallery {
+    grid-template-areas:
+      "chile guatemala"
+      "hawaii iran"
+      "ireland italy"
+      "moabDesert rockyMountains"
+      "switzerland uk"
+      "us wyoming"
+  }
 }
 
 @media screen and (min-width:1300px){
-    
+  #gallery {
+    grid-template-areas:
+      "chile guatemala hawaii"
+      "iran ireland italy"
+      "moabDesert rockyMountains switzerland"
+      "uk us wyoming"
+  }
 }
