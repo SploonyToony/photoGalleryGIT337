@@ -54,6 +54,9 @@ p{
     display: grid;
 }
 
+#gallery > p{
+  margin-bottom: 10px;;
+}
 .responsive {
   max-width: 100%;
   height: auto;
@@ -102,6 +105,8 @@ img {
 
 figure {
   margin:0 auto;
+  width:auto;
+  height: auto;
     position:relative;
     top:10px;
   }
