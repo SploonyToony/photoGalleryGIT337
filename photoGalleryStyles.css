@@ -5,6 +5,7 @@ html {
 }
 
 body{
+  margin:0 auto;
   padding: 30px;
 }
 
@@ -35,7 +36,8 @@ h3 {
 }
 
 nav li {
-    display: inline-block;
+    display: inline-flex;
+    margin:auto;
 }
 nav a {
     color:white;
@@ -45,6 +47,7 @@ nav a {
     text-decoration: none;
     list-style: none;
     padding:5px;
+    text-align: center;
 }
 
 a:hover {
@@ -130,6 +133,45 @@ p{
     grid-area:wyoming;
   }
 
+  figcaption, label, placeholder, input, small {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.chile, .hawaii, .moabDesert{
+  position: relative;
+  color: white;
+  bottom: 35px;
+}
+
+.guatemala, .wyoming {
+  position: relative;
+  color: white;
+  bottom: 270px;
+}
+
+.italy {
+    position: relative;
+    color: black;
+    bottom: 35px;
+}
+
+.iran, .ireland{
+  position: relative;
+  color: black;
+  bottom: 620px;
+}
+
+.rockyMountains, .switzerland, .uk, .usa{
+  position: relative;
+  color: black;
+  bottom: 270px;
+}
 
 img {
     position:relative;
@@ -145,20 +187,20 @@ figure {
   padding:5px;
   }
 
-figcaption, label, placeholder, input, small {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
+div {
+  margin-bottom:20px;;
 }
 
 label {
-  display: block;
-  float:left;  
-  width:10em;
-  margin-right: 1em;
+  display:block;
+  text-align: left;
+}
+input{
+  margin:auto;
 }
 
 input[type=text]{
+  display: block;
   height:30px;
   width:50%;
   font-size: 14pt;
