@@ -35,6 +35,10 @@ h3 {
   visibility: hidden;
 }
 
+nav {
+  text-align: center;
+}
+
 nav li {
     display: inline-flex;
     margin:auto;
@@ -191,10 +195,14 @@ div {
   margin-bottom:20px;;
 }
 
-label {
+label,input {
   display:block;
+}
+
+label {
   text-align: left;
 }
+
 input{
   margin:auto;
 }
@@ -280,6 +288,10 @@ footer {
 }
 
 @media screen and (min-width:1300px){
+
+  nav {
+    text-align: right;
+  }
 
   #images {
     grid-template-areas:
