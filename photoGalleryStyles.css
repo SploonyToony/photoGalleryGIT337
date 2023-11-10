@@ -26,8 +26,12 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+  visibility: hidden;
+}
+
 nav li {
-    list-style: none;
+    display: inline-block;
 }
 nav a {
     color:white;
@@ -35,13 +39,33 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    list-style: none;
+    padding:5px;
+}
+
+a:hover {
+  background-color: #007d7b;
+  color: white;
 }
 
 [href="#top"] {
     position:fixed;
     bottom:0px;
     right:0px;
-    border-radius:10px 0 0px 0px;
+    border-style:solid;
+    border-width: medium;
+    border-color: white;
+    background-color: black;
+    padding:5px;
+  }
+
+  [href="#top"]:hover {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-style:solid;
+    border-width: thick;
+    border-color: black;
   }
 
 p{
@@ -51,11 +75,14 @@ p{
 #gallery,#about{
     background-color: white;
     color:black;
-    display: grid;
+}
+
+#images {
+  display: grid;
 }
 
 #gallery > p{
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 .responsive {
   max-width: 100%;
@@ -99,22 +126,32 @@ p{
     grid-area:wyoming;
   }
 
+
 img {
     position:relative;
+    float:none;
   }
 
 figure {
   margin:0 auto;
   width:auto;
   height: auto;
-    position:relative;
-    top:10px;
+  position:relative;
+  top:10px;
+  padding:5px;
   }
 
 figcaption, label, placeholder, input, small {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+label {
+  display: block;
+  float:left;  
+  width:10em;
+  margin-right: 1em;
 }
 
 input[type=text]{
@@ -131,11 +168,6 @@ input[type=text]{
   text-align: center;
 }
 
-label {
-  display: block;
-  text-align:left;
-}
-
 input[type=submit]{
   color:white;
   background-color:#007d7b;
@@ -145,6 +177,17 @@ input[type=submit]{
   border-radius:15px;
   margin-bottom: 50px;;
 }
+
+input[type=submit]:hover{
+  color:#007d7b;
+  background-color:white;
+  padding:10px;
+  width:25%;
+  border:none;
+  border-radius:15px;
+  margin-bottom: 50px;;
+}
+
 footer {
   text-align: center;
   font-weight: normal;
@@ -154,12 +197,8 @@ footer {
     h1 {
         text-align: center;
     }
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
     
-    }
-  #gallery {
+  #images {
     grid-template-areas:
       "chile"
       "guatemala"
@@ -182,7 +221,8 @@ footer {
     text-align: left;
     padding-left: 10px;
   }
-  #gallery {
+
+  #images {
     grid-template-areas:
       "chile guatemala"
       "hawaii iran"
@@ -194,7 +234,8 @@ footer {
 }
 
 @media screen and (min-width:1300px){
-  #gallery {
+
+  #images {
     grid-template-areas:
       "chile guatemala hawaii"
       "iran ireland italy"
