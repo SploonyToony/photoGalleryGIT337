@@ -26,6 +26,10 @@ h2 {
     text-transform: uppercase;
 }
 
+#images h2 {
+  visibility: hidden;
+}
+
 h3 {
   visibility: hidden;
 }
