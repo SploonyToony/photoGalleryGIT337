@@ -195,12 +195,17 @@ div {
   margin-bottom:20px;;
 }
 
-label,input {
-  display:block;
+#contact {
+  text-align: center;
+}
+
+label, input {
+  display: block;
 }
 
 label {
   text-align: left;
+  margin-left: 25%;
 }
 
 input{
@@ -218,9 +223,6 @@ input[type=text]{
   color:#007d7b;
 }
 
-#contact {
-  text-align: center;
-}
 
 input[type=submit]{
   color:white;
